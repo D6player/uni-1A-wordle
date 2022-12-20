@@ -1,12 +1,9 @@
 #include "partida.h"
 
-void inicializa_partida(t_partida * partida, char palabra_correcta[NUM_LETRAS_PALABRA]) {
+void inicializa_partida(t_partida * partida) {
     int i, j;
 
     partida->intento = 0;
-
-    for (i = 0; i < NUM_LETRAS_PALABRA; i++)
-        partida->palabra_correcta[i] = palabra_correcta[i];
 
     for (i = 0; i < INTENTOS; i++)
         for (j = 0; j < NUM_LETRAS_PALABRA; j++)

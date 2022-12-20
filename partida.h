@@ -16,10 +16,7 @@ typedef struct {
     t_casilla teclado[FILS][COLS];
 } t_partida;
 
-void inicializa_partida(
-    t_partida * partida,
-    char palabra_correcta[NUM_LETRAS_PALABRA]);
-
+void inicializa_partida(t_partida * partida);
 void imprimir_partida(t_partida partida);
 void introduce_palabra(
     t_partida * partida,
